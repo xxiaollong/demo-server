@@ -1,0 +1,20 @@
+server:
+    port: 8888
+    servlet:
+      session:
+        cookie:
+          name: BIUSID
+
+spring:
+  profiles:
+    active: dev
+    include: druid,mybatisplus,shiro
+  datasource:
+    url: jdbc:mysql://192.168.1.124:3306/biu?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: Yp@Mb#691
+
+logging:
+  path: ./logs
+  level:
+    com.example.*.dao: INFO

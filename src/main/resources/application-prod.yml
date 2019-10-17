@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.1.124:3306/biu?characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Yp@Mb#691
