@@ -19,7 +19,7 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfiguration {
-	/**
+	/*
 	 * Shiro的Web过滤器Factory 命名:shiroFilter
 	 */
 	@Bean(name = "shiroFilter")
@@ -44,6 +44,7 @@ public class ShiroConfiguration {
 		filterChainDefinitionMap.put("/page/401", "anon");
 		filterChainDefinitionMap.put("/page/403", "anon");
 		filterChainDefinitionMap.put("/page/index", "anon");
+		filterChainDefinitionMap.put("/report/*", "anon");
 
 		//除了以上的请求外，其它请求都需要登录
 		filterChainDefinitionMap.put("/**", "authc");

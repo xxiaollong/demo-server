@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.report.mapper.Base1AdidZbMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.report.entity.Base1AdidZb">
+        <id column="id" property="id" />
+        <result column="pf" property="pf" />
+        <result column="wvid" property="wvid" />
+        <result column="wvname" property="wvname" />
+        <result column="did" property="did" />
+        <result column="dname" property="dname" />
+        <result column="level" property="level" />
+        <result column="mid" property="mid" />
+        <result column="mname" property="mname" />
+        <result column="vid" property="vid" />
+        <result column="reledate" property="reledate" />
+        <result column="adid" property="adid" />
+        <result column="adname" property="adname" />
+        <result column="start" property="start" />
+        <result column="proid" property="proid" />
+        <result column="proname" property="proname" />
+        <result column="merid" property="merid" />
+        <result column="mername" property="mername" />
+        <result column="ordernum" property="ordernum" />
+        <result column="timediff" property="timediff" />
+        <result column="zb" property="zb" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pf, wvid, wvname, did, dname, level, mid, mname, vid, reledate, adid, adname, start, proid, proname, merid, mername, ordernum, timediff, zb
+    </sql>
+
+</mapper>

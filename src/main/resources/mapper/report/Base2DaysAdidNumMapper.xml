@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.report.mapper.Base2DaysAdidNumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.report.entity.Base2DaysAdidNum">
+        <id column="id" property="id" />
+        <result column="pf" property="pf" />
+        <result column="wvid" property="wvid" />
+        <result column="day" property="day" />
+        <result column="did" property="did" />
+        <result column="mid" property="mid" />
+        <result column="vid" property="vid" />
+        <result column="proid" property="proid" />
+        <result column="merid" property="merid" />
+        <result column="adid" property="adid" />
+        <result column="terminal" property="terminal" />
+        <result column="nums" property="nums" />
+        <result column="stime" property="stime" />
+        <result column="etime" property="etime" />
+        <result column="level" property="level" />
+        <result column="reledate" property="reledate" />
+        <result column="start" property="start" />
+        <result column="ordernum" property="ordernum" />
+        <result column="timediff" property="timediff" />
+        <result column="is_allot" property="isAllot" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pf, wvid, day, did, mid, vid, proid, merid, adid, terminal, nums, stime, etime, level, reledate, start, ordernum, timediff, is_allot AS isAllot
+    </sql>
+
+</mapper>

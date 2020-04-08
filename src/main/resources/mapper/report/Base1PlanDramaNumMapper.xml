@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.report.mapper.Base1PlanDramaNumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.report.entity.Base1PlanDramaNum">
+        <id column="id" property="id" />
+        <result column="pf" property="pf" />
+        <result column="wvid" property="wvid" />
+        <result column="did" property="did" />
+        <result column="dname" property="dname" />
+        <result column="stime" property="stime" />
+        <result column="etime" property="etime" />
+        <result column="num" property="num" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pf, wvid, did, dname, stime, etime, num
+    </sql>
+
+</mapper>
